@@ -66,7 +66,7 @@
 <body>
     <div class="container">
         <img src="img/plane.png-800-by-800.png" alt="My Picture" class="main-image">
-        <h1>Daniel Dominguez</h1>
+        <h1 id="name" onclick="changeNameColor()">Daniel Dominguez</h1>
         <h2>About Me</h2>
         <p>Hello! I’m Daniel Dominguez, a Campus Safety Assistant at the LUPD. Welcome to my website where I share my interests, projects, and thoughts.</p>
         <p>Email: <a href="danieldominguez1@lewisu.edu">danieldominguez1@lewisu.edu</a></p>
@@ -111,6 +111,10 @@
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+        function changeNameColor() {
+    document.getElementById("name").style.color = "red";
+}
+
     </script>
 </body>
 </html>
